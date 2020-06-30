@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ninja Weather</title>
+  </head>
+  <body>
+    <div class="container my-5 mx-auto">
+      <h1 class="text-muted text-center my-4">Weather Ninja</h1>
+
+      <form class="change-location my-4 text-center text-muted">
+        <label for="city">Enter a city for weather information</label>
+        <input type="text" name="city" class="form-control p-4" />
+      </form>
+
+      <div class="card shadow-lg rounded d-none">
+        <img
+          src="data:image/png;base64,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"
+          class="time card-img-top"
+        />
+        <div class="icon bg-light mx-auto text-center">
+          <!-- icon here later -->
+        </div>
+        <div class="text-muted text-uppercase text-center details">
+          <h5 class="my-3">City name</h5>
+          <div class="my-3">Weather condition</div>
+          <div class="display-4 my-4">
+            <span>temp</span>
+            <span>&deg;C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
